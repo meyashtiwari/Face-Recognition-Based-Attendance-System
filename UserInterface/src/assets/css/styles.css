@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Encode Sans Expanded';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local(''),
+		url('../fonts/encode-sans-expanded-v5-latin-regular.ttf') format('truetype');
+}
+* {
+	font-family: 'Encode Sans Expanded', sans-serif;
+}
