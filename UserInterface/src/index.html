@@ -4,8 +4,8 @@
 		<title>Attendance Management System</title>
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./assets/css/photon.min.css" />
-		<link rel="stylesheet" href="assets/css/styles.css" />
-		<script defer src="./assets/js/buttonFunctions.js"></script>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<script defer src="./assets/js/script.js"></script>
 	</head>
 	<body>
 		<div class="window">
@@ -27,21 +27,21 @@
 						<nav class="nav-group">
 							<h5 class="nav-group-title">Application Menu</h5>
 
-							<span class="nav-group-item">
+							<span id="option1" class="nav-group-item active">
 								<span class="icon icon-user-add"></span>
 								Add a New Student
 							</span>
-							<span class="nav-group-item">
+							<span id="option2" class="nav-group-item">
 								<span class="icon icon-check"></span>
 								Mark Attendance
 							</span>
-							<span class="nav-group-item">
+							<span id="option3" class="nav-group-item">
 								<span class="icon icon-book-open"></span>
 								Check Attendance
 							</span>
 						</nav>
 					</div>
-					<div class="pane"></div>
+					<div id="content" class="pane no-table"></div>
 				</div>
 			</div>
 

@@ -5,8 +5,7 @@
 	"main": "main.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "electron .",
-		"watch": "nodemon --exec electron ."
+		"start": "electron ."
 	},
 	"author": "",
 	"license": "ISC",
@@ -14,7 +13,7 @@
 		"electron": "^12.0.7"
 	},
 	"dependencies": {
-		"nodemon": "^2.0.7",
+		"jquery": "^3.6.0",
 		"python-shell": "^3.0.0"
 	}
 }

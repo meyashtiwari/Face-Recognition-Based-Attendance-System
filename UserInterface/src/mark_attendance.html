@@ -1,0 +1,12 @@
+<div id="markattendance">
+	<h1 class="title" id="date"></h1>
+	<button class="btn btn-large btn-positive">Mark Attendance</button>
+</div>
+<script type="text/javascript">
+	var clockElement = document.getElementById('date');
+
+	function clock() {
+		clockElement.textContent = new Date().toString();
+	}
+	setInterval(clock, 1000);
+</script>

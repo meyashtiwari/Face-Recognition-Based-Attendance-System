@@ -1,16 +1,14 @@
 const { app, BrowserWindow, ipcMain, dialog } = require('electron');
-const path = require('path');
 const ipc = ipcMain;
 
 function createWindow() {
 	const win = new BrowserWindow({
-		width: 900,
+		width: 700,
 		height: 600,
 		resizable: false,
 		webPreferences: {
 			nodeIntegration: true,
 			contextIsolation: false,
-			preload: path.join(__dirname, 'preload.js'),
 		},
 	});
 
@@ -21,8 +19,16 @@ function createWindow() {
 	});
 
 	ipc.on('showAbout', () => {
-		dialog.showMessageBoxSync({
-			message: 'Hello',
+		let response = dialog.showMessageBoxSync(win, {
+			title: 'About',
+			type: 'info',
+			message:
+				'Technologies used :\n\
+				-openCV (Opensource Computer Vision)\n\
+				-Python3\n\
+				-Electron GUI interface',
+			detail:
+				'Source code is available at https://github.com/meyashtiwari\nDeveloped by Yash Tiwari',
 		});
 	});
 }

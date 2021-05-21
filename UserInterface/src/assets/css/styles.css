@@ -9,3 +9,25 @@
 * {
 	font-family: 'Encode Sans Expanded', sans-serif;
 }
+
+.nav-group-item:hover {
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.no-table {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+#markattendance {
+	text-align: center;
+}
+
+#markattendance h1 {
+	margin-bottom: 3em;
+}
