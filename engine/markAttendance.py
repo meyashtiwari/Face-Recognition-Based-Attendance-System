@@ -1,0 +1,10 @@
+from modules import trackImage
+import os
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+try:
+    trackImage.TrackImages()
+    print("success")
+except:
+    print("failed")

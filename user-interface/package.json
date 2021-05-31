@@ -1,0 +1,29 @@
+{
+	"name": "user-interface",
+	"version": "1.0.0",
+	"description": "UserInterface for Attendance Management System",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup -c",
+		"dev": "rollup -c -w",
+		"start": "electron ."
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^17.0.0",
+		"@rollup/plugin-node-resolve": "^11.0.0",
+		"electron": "^13.0.1",
+		"python-shell": "^3.0.0",
+		"rollup": "^2.3.4",
+		"rollup-plugin-css-only": "^3.1.0",
+		"rollup-plugin-livereload": "^2.0.0",
+		"rollup-plugin-svelte": "^7.0.0",
+		"rollup-plugin-terser": "^7.0.0",
+		"svelte": "^3.0.0"
+	},
+	"dependencies": {
+		"csv-parse": "^4.15.4",
+		"sirv-cli": "^1.0.0",
+		"sweetalert": "^2.1.2"
+	}
+}
